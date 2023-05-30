@@ -1,0 +1,39 @@
+.item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58%;
+    height: 100%;
+    color: #fff;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+h2{
+    font-size: 40px;
+    line-height: 1;
+} 
+p{
+    font-size: 16px;
+    margin: 20px 0;
+}
+.social-icon a i{
+    color: #fff;
+    font-size: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.Logout-btn{
+    width: 15%;
+    height: 20px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    background-color: red;
+}
