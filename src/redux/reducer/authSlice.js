@@ -5,7 +5,6 @@ const initialState = {
     email: "",
     password :""
 };
-console.log(initialState);
 export const userSlice = createSlice({
   name: "user",
   initialState,

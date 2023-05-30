@@ -12,7 +12,6 @@ const Login = () => {
 
   const handelSubmit = (e) => {
     e.preventDefault();
-    console.log(email,password)
     if (users.email === email && users.password === password) {
       toast("Login Successfully");
       history("/homepage");

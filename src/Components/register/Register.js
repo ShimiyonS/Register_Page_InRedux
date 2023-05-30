@@ -10,18 +10,17 @@ export const Register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
-    const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const handelSubmit = (e) => {
     e.preventDefault();
-console.log({name:name,email:email,password:password})
-    dispatch(registerRedux({name,email,password}));
-    toast("Register Successfully")
-    history('/login')
+    dispatch(registerRedux({ name, email, password }));
+    toast("Register Successfully");
+    history("/login");
   };
 
-  const navigate = ()=>{
-    history('/login')
-  }
+  const navigate = () => {
+    history("/login");
+  };
   return (
     <>
       <div className="form-box">
@@ -60,7 +59,9 @@ console.log({name:name,email:email,password:password})
             />
             <label>Password</label>
           </div>
-          <button className="btn" type="submit">Login In</button>
+          <button className="btn" type="submit">
+            Login In
+          </button>
           <div className="create-account">
             <p>
               Already Have An Account?
