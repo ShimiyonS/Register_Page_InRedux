@@ -19,37 +19,32 @@ const Homepage = () => {
       <div className="home-background">
         <div className="item">
           <div className="text-item">
-          <div style={{display: 'flex', justifyContent: 'right'}}>
-            <button className="Logout-btn" onClick={handleLogout}>
-              LogOut
-            </button>
+            <div style={{ display: "flex", justifyContent: "right" }}>
+              <button className="Logout-btn" onClick={handleLogout}>
+                LogOut
+              </button>
             </div>
             <h2>
-              HELLO!! <u>{users.name}</u>
-              {"  "}
-              Welcome! <br />
-              <span>To Our WebPage</span>
+              HELLO!! &nbsp;&nbsp;<u>{users.name}</u>&nbsp;&nbsp;
+              <span> Welcome! To Our WebPage</span>
             </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
               repellendus?
             </p>
-            
+
             <div className="social-icon">
-              <a href="a">
+              <a href="https://www.linkedin.com/in/shimiyon-s-060610187/">
+                <i className="bx bxl-linkedin"></i>
+              </a>
+              <a href="Facebook">
                 <i className="bx bxl-facebook"></i>
               </a>
-              <a href="a">
+              <a href="twitter">
                 <i className="bx bxl-twitter"></i>
               </a>
-              <a href="a">
-                <i className="bx bxl-youtube"></i>
-              </a>
-              <a href="a">
+              <a href="instagram">
                 <i className="bx bxl-instagram"></i>
-              </a>
-              <a href="a">
-                <i className="bx bxl-linkedin"></i>
               </a>
             </div>
           </div>
