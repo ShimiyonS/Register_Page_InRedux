@@ -34,10 +34,12 @@ export const Register = () => {
                 </span>
                 <input
                   type="text"
+                  id="name"
+                  autoComplete="given-name"
                   required
                   onChange={(e) => setName(e.target.value)}
                 />
-                <label>Username</label>
+                <label htmlFor="name">Username</label>
               </div>
               <div className="input-box">
                 <span className="icon">
@@ -46,9 +48,11 @@ export const Register = () => {
                 <input
                   type="email"
                   required
+                  id="email"
+                  autoComplete="off"
                   onChange={(e) => setEmail(e.target.value)}
                 />
-                <label>Email</label>
+                <label htmlFor="email">Email</label>
               </div>
               <div className="input-box">
                 <span className="icon">
@@ -57,9 +61,11 @@ export const Register = () => {
                 <input
                   type="password"
                   required
+                  id="password"
+                  autoComplete="off"
                   onChange={(e) => setPassword(e.target.value)}
                 />
-                <label>Password</label>
+                <label htmlFor="password">Password</label>
               </div>
               <button className="btn" type="submit">
                 Login In

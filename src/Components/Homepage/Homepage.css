@@ -44,7 +44,6 @@ p{
 .Logout-btn{
     width: 10%;
     height: 20px;
-    outline: none;
     border: 10px;
     margin-top: 20px;
     border-radius: 4px;
@@ -52,4 +51,12 @@ p{
     font-size: 14px;
     color: #fff;
     background-color:transparent;
+    display: "flex";
+    justify-Content: "right",
+}
+@media screen and(max-width :740) {
+    .home-background{
+        max-width: 100%;
+        margin: auto;
+    }
 }

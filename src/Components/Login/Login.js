@@ -29,27 +29,31 @@ const Login = () => {
         <form onSubmit={handelSubmit}>
           <h2>Sign In</h2>
           <div className="input-box">
-            <span className="icon">
-              <i className="bx bxs-envelope"></i>
-            </span>
-            <input
-              type="email"
-              required
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <label>Email</label>
-          </div>
-          <div className="input-box">
-            <span className="icon">
-              <i className="bx bxs-lock-alt"></i>
-            </span>
-            <input
-              type="password"
-              required
-              onChange={(e) => setPassword(e.target.value)}
-            />
-            <label>Password</label>
-          </div>
+                <span className="icon">
+                  <i className="bx bxs-envelope"></i>
+                </span>
+                <input
+                  type="email"
+                  required
+                  id="email"
+                  autoComplete="off"
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <label htmlFor="email">Email</label>
+              </div>
+              <div className="input-box">
+                <span className="icon">
+                  <i className="bx bxs-lock-alt"></i>
+                </span>
+                <input
+                  type="password"
+                  required
+                  id="password"
+                  autoComplete="off"
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+                <label htmlFor="password">Password</label>
+              </div>
           <button className="btn">Login In</button>
           {alert}
 
