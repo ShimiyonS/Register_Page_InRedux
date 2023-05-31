@@ -7,16 +7,11 @@ import Homepage from './Components/Homepage/Homepage';
 function App() {
   return (
     <>
-    <div className="background">
-      <div className="container">
       <Routes>
         <Route path="/" element={<Register/>}/>
         <Route path='/homepage' element={<Homepage/>}/>
         <Route path='/login' element={<Login/>}/>
       </Routes>
-         
-      </div>
-      </div>
     </>
   );
 }

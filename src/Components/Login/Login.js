@@ -23,7 +23,8 @@ const Login = () => {
     history("/");
   };
   return (
-    <div className="login-section">
+    <div className="background">
+    <div className="container">    <div className="login-section">
       <div className="form-box login">
         <form onSubmit={handelSubmit}>
           <h2>Sign In</h2>
@@ -61,6 +62,8 @@ const Login = () => {
             </p>
           </div>
         </form>
+      </div>
+      </div>
       </div>
     </div>
   );

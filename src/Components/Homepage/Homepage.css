@@ -2,7 +2,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 58%;
+    width: 100%;
     height: 100%;
     color: #fff;
     background: transparent;
@@ -10,14 +10,29 @@
     justify-content: space-between;
     flex-direction: column;
 }
-
+.home-background{
+    background: url(./Background.jpg) no-repeat;
+    background-position: center;
+    background-size:cover ;
+    height: 100vh;
+    width: 100%;
+}
 h2{
     font-size: 40px;
     line-height: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 } 
 p{
     font-size: 16px;
     margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.social-icon{
+    display: flex;
+    justify-content: center;
 }
 .social-icon a i{
     color: #fff;
@@ -27,13 +42,14 @@ p{
     transition: .5s ease;
 }
 .Logout-btn{
-    width: 15%;
+    width: 10%;
     height: 20px;
     outline: none;
-    border: none;
+    border: 10px;
+    margin-top: 20px;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
-    background-color: red;
+    background-color:transparent;
 }
